@@ -1,4 +1,5 @@
 alfavit='абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+print('\nЭто "Шифр Цезаря". Он поможет зашифровать или расшифровать послание')
 print('\nНапишите текст (на русском языке), который нужно зашифровать или расшифровать')
 try:
     A=0
@@ -19,7 +20,6 @@ try:
             k = sdvig
             for ic in text_z:
                 position=alfavit.find(ic)
-                
                 new_position=position+k
                 
                 if ic in alfavit:
@@ -81,8 +81,7 @@ while A==1:
                     sdvig -= 33
                 k = sdvig
                 for ic in text_z:
-                    position=alfavit.find(ic)
-                    
+                    position=alfavit.find(ic)                    
                     new_position=position+k
                     
                     if ic in alfavit:
